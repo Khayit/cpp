@@ -1,3 +1,4 @@
+/*переделать калькулятор на template T*/
 #include <iostream>
 
 using namespace std;
