@@ -5,13 +5,14 @@
 using namespace std;
 
 void addEmployee(string *names, int *ages, float *salaries, int index);
+
 void printEmployee(const string &name, int age, float salary);
+
 void printAllEmployees(const string *names, const int *ages, const float *salaries, int count);
 
-int main()
-{
+int main() {
 
-    setlocale(LC_ALL, "RU");
+setlocale(LC_ALL, "RU");
 
     const int maxEmployees = 100;
     string names[maxEmployees];
@@ -22,8 +23,7 @@ int main()
     cout << "Введите количество сотрудников: ";
     cin >> count;
 
-    for (int i = 0; i < count; i++)
-    {
+    for (int i = 0; i < count; i++) {
         addEmployee(names, ages, salaries, i);
     }
 
@@ -34,8 +34,7 @@ int main()
     return 0;
 }
 
-void addEmployee(string *names, int *ages, float *salaries, int index)
-{
+void addEmployee(string *names, int *ages, float *salaries, int index) {
     cout << "Введите имя сотрудника: ";
     cin >> names[index];
     cout << "Введите возраст сотрудника: ";
@@ -44,18 +43,15 @@ void addEmployee(string *names, int *ages, float *salaries, int index)
     cin >> salaries[index];
 }
 
-void printEmployee(const string &name, int age, float salary)
-{
+void printEmployee(const string &name, int age, float salary) {
     cout << "Имя: " << name << endl;
     cout << "Возраст: " << age << endl;
     cout << "Зарплата: " << salary << "$" << endl;
 }
 
-void printAllEmployees(const string *names, const int *ages, const float *salaries, int count)
-{
-    for (int i = 0; i < count; i++)
-    {
-        cout << "Сотрудник #" << i + 1 << ":" << endl;
+void printAllEmployees(const string *names, const int *ages, const float *salaries, int count) {
+    for (int i = 0; i < count; i++) {
+        cout << "Сотрудник #" << i+1 << ":" << endl;
         printEmployee(names[i], ages[i], salaries[i]);
         cout << endl;
     }
