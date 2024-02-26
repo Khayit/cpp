@@ -7,18 +7,11 @@ code.*/
 
 using namespace std;
 
-double Plosh(double a, double b)
-{
-    return a * b;
-}
+double Plosh(double a, double b) { return a * b; }
 
-double Perim(double a, double b)
-{
-    return 2 * (a + b);
-}
+double Perim(double a, double b) { return 2 * (a + b); }
 
-int main()
-{
+int main() {
     double a = 5.0;
     double b = 3.0;
 

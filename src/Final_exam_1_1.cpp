@@ -4,8 +4,7 @@ shop, we provide 10% discount, else we charge fully.*/
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int age;
     char membership_status;
 
@@ -15,12 +14,9 @@ int main()
     cout << "Вы являетесь пользователем нашнго магазина? (Y/N): ";
     cin >> membership_status;
 
-    if (age >= 18 && (membership_status == 'Y' || membership_status == 'y'))
-    {
+    if (age >= 18 && (membership_status == 'Y' || membership_status == 'y')) {
         cout << "Вы имеете скидку на 10%. " << endl;
-    }
-    else
-    {
+    } else {
         cout << "С вас берется полная стоимость. " << endl;
     }
 

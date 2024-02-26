@@ -6,21 +6,18 @@ program and output how many attempts user made.*/
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int lotteryNumber = 42;
     int userNumber;
     int attempts = 0;
 
-    while (true)
-    {
+    while (true) {
         cout << "Введите номер: ";
         cin >> userNumber;
 
         attempts++;
 
-        if (userNumber == lotteryNumber)
-        {
+        if (userNumber == lotteryNumber) {
             break;
         }
 
